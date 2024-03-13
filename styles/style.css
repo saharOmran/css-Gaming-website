@@ -33,6 +33,104 @@
   background-color: var(--black-700);
 }
 
+.logo {
+  font-size: 1.5rem;
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+
+.div {
+  background-color: var(--primary, #3b2a9f);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  padding: 29px 59px;
+}
+@media (max-width: 991px) {
+  .div {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}
+.div-2 {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: fit-content;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
+  }
+}
+.div-3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .div-3 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-4 {
+  font: 800 29px/153.5% Poppins, sans-serif;
+}
+.div-5 {
+  align-self: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .div-5 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-6 {
+  font-family: Poppins, sans-serif;
+}
+.div-7 {
+  font-family: Poppins, sans-serif;
+}
+.div-8 {
+  font-family: Poppins, sans-serif;
+}
+.div-9 {
+  font-family: Poppins, sans-serif;
+}
+.img {
+  aspect-ratio: 10;
+  object-fit: auto;
+  object-position: center;
+  width: 39px;
+  align-self: center;
+  margin: 7px 0 0 707px;
+}
+.div-10 {
+  border-radius: 6px;
+  background-color: var(--secondary, #fa8305);
+  justify-content: center;
+  white-space: nowrap;
+  padding: 14px 25px;
+  font: 400 13px Poppins, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-10 {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
 .main-all{
   width: 1440px;
 }
@@ -116,12 +214,13 @@
    
 }
 .card {
-  flex: 0 0 378px;
+  flex: 340 340 378px;
   margin: 10px;
   background-color: var(--black-700);
   height: 348px;
   border-radius: 20px;
   margin-top: -270px;
+  width: 345px;
 } 
  
 .card .text {
@@ -344,16 +443,20 @@
   border-radius: 20px;
   background-color: var(--black-700);
   margin-top: 40px;
+  height: 100px;
 
 }
 
 .stay-in-the-loop .stay .stay-text {
   color: #ffffff;
   padding-left: 56px;
-  padding-top: 30px;
+  padding-top: -30px;
   background-color: var(--black-700);
   width: 636px;
+  height: 90px;
   margin-bottom: 60px;
+  margin-top: -45px;
+   
 }
 .stay-in-the-loop .stay .stay-text h3 {
   width: 303px;
@@ -375,6 +478,7 @@
   width: 385px;
   border-radius: 8px;
   margin-bottom: 80px;
+  margin-top: -17px;
 }
 
 .stay-in-the-loop .stay .stay-input button{
@@ -386,6 +490,7 @@
   width: 105px;
   height: 37px;
   border-radius: 8px;
+  
  
 }
 
@@ -406,5 +511,98 @@
   font-size: 25px;
   line-height: 45px;
 }
+
+.footer-table{
+  width : 1500px;
+  height: 400px;
+  background-color: black;
+  margin-top: 163px;
+}
+
+.footer-up-div{
+  width: 1219px;
+  height: 161px;
+  margin-left: 101px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--black-700);
+}
+
+.footer-div-left{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--black-700);
+}
+
+.footer-div1{
+  color: white;
+  padding-top: 79px;
+  width: 350px;
+  background-color: var(--black-700);
+}
+
+.footer-ul{
+  list-style-type: none;
+  line-height: 30px;
+  background-color: var(--black-700);
+}
+
+.footer-div1>h4{
+  font-size: 24px;
+  background-color: var(--black-700);
+}
+
+.footer-div2{
+  color: white;
+  padding-top: 79px;
+  padding-left: 70px;
+  width: 200px;
+  background-color: var(--black-700);
+}
+
+.footer-div3{
+  color:white; 
+  width: 400px;
+  padding-top: 79px;
+  padding-left: 100px;
+  background-color: var(--black-700);
+}
+
+.footer-div4{
+  display: flex;
+  flex-direction: row;
+  margin-top: 250px;
+  padding-left: 90px;
+  background-color: var(--black-700);
+}
+
+.footer-icons{
+  padding-left: 10px;
+  background-color: var(--black-700);
+}
+
+.footer-icons img{
+  background-color: var(--black-700);
+  width: 34px;
+  height: 34px;
+}
+
+.footer-table>hr{
+  margin-top: 150px;
+  background-color: var(--black-700);
+}
+
+.footer-buttom-div{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 30px;
+  font-size: 13px;
+  background-color: var(--black-700);
+}
+
+.footer-table p , h4 , li , b , i {
+  background-color: var(--black-700);
+} 
 
  
