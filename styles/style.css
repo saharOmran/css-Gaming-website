@@ -1,18 +1,10 @@
-/* 1. don't modify this style */
-
-@font-face {
-  font-family: 'Poppins-Black';
-  src: url("../assets/fonts/Poppins/Poppins-Black.ttf");
-}
-@font-face {
-  font-family: 'Poppins-Light';
-  src: url("../assets/fonts/Poppins/Poppins-Light.ttf");
-}
+ 
 * {
   padding: 0;
   margin: 0;
   background-color: var(--blueGradiant);
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .clearfix::after {
   content: '';
@@ -24,6 +16,8 @@
 :root {
   --blueGradiant: #3B2A9F;
   --secondary: #FA8305;
+  --brown: #1C140F;
+  --primary-100: #5141AA;
   /* --"somekey-attr": "somevalue" i.e : */
   --black-700: #000;
 }
@@ -48,12 +42,17 @@
   color: #fff;
   padding: 29px 59px;
 }
-@media (max-width: 991px) {
-  .div {
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
+
+.div a{
+  color: white;
+  text-decoration: none;
 }
+
+.div button a{
+  background-color: var(--secondary);
+}
+ 
+
 .div-2 {
   display: flex;
   margin-top: 5px;
@@ -62,26 +61,18 @@
   flex-basis: 0;
   width: fit-content;
 }
-@media (max-width: 991px) {
-  .div-2 {
-    max-width: 100%;
-  }
-}
+ 
 .div-3 {
   display: flex;
   width: 100%;
   justify-content: space-between;
   gap: 20px;
 }
-@media (max-width: 991px) {
-  .div-3 {
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
-}
+ 
 .div-4 {
-  font: 800 29px/153.5% Poppins, sans-serif;
+  font: 800 29px/153.5% "Poppins-Light", sans-serif;
 }
+
 .div-5 {
   align-self: start;
   display: flex;
@@ -90,23 +81,18 @@
   font-size: 16px;
   font-weight: 400;
 }
-@media (max-width: 991px) {
-  .div-5 {
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
-}
+ 
 .div-6 {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins-Light", sans-serif;
 }
 .div-7 {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins-Light", sans-serif;
 }
 .div-8 {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins-Light", sans-serif;
 }
 .div-9 {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins-Light", sans-serif;
 }
 .img {
   aspect-ratio: 10;
@@ -122,14 +108,9 @@
   justify-content: center;
   white-space: nowrap;
   padding: 14px 25px;
-  font: 400 13px Poppins, sans-serif;
+  font: 400 13px "Poppins-Light", sans-serif;
 }
-@media (max-width: 991px) {
-  .div-10 {
-    white-space: initial;
-    padding: 0 20px;
-  }
-}
+ 
 
 .main-all{
   width: 1440px;
@@ -139,7 +120,7 @@
   margin-top: 114px;
   margin-left: 110px;
   color: #ffffff;
-  font-family: 'poppins-Light';
+ 
   
  
 }
@@ -162,7 +143,6 @@
 }
 .main-top .home_game{
  
-  font-family: 'poppins-Light';
   font-size: 12px;
   line-height: 25px;
 
@@ -178,8 +158,8 @@
 
 .main-top button{
   background-color: #FA8305;
-  font-size: 16px;
-  padding: 10px 57px 13px 19px;
+  font-size: 15px;
+  padding: 10px 45px 13px 19px;
   width: 176px;
   height: 47px;
   border-radius: 40px;
@@ -475,7 +455,7 @@
 }
 .stay-in-the-loop .stay .stay-input{
   background-color: #ffffff;
-  width: 385px;
+  width: 400px;
   border-radius: 8px;
   margin-bottom: 80px;
   margin-top: -17px;
@@ -487,7 +467,7 @@
   font-size: 13;
   font-weight: 400;
   text-align: center;
-  width: 105px;
+  width: 100px;
   height: 37px;
   border-radius: 8px;
   
@@ -604,5 +584,11 @@
 .footer-table p , h4 , li , b , i {
   background-color: var(--black-700);
 } 
+
+.footer-ul a{
+  text-decoration: none;
+  background-color: var(--black-700);
+  color: white;
+}
 
  
